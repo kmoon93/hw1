@@ -106,9 +106,27 @@ DROP TABLE IF EXISTS cast;
 
 
 -- Create new tables, according to your domain model
+CREATE TABLE actors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor_name TEXT,
+    character_name TEXT
+);
+
 CREATE TABLE movies (
-    id INTEGER
-)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie_name TEXT,
+    MPAA_rating TEXT,
+    studio_name TEXT,
+    year_released TEXT 
+);
+
+CREATE TABLE cast (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor_name TEXT,
+    movie_title TEXT,
+    actor_id INTEGER,
+    character_name TEXT
+);
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
