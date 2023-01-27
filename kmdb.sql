@@ -238,4 +238,4 @@ FROM movies;
 SELECT movies.movie_title, actors.actor_name, cast.character_name
 FROM cast
 INNER JOIN movies ON movies.id = cast.movie_id
-INNER JOIN actors ON actors.id = cast.actor_id
+INNER JOIN actors ON actors.id = cast.actor_id;
