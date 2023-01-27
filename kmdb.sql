@@ -129,24 +129,44 @@ CREATE TABLE cast (
 
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    studio_name
+    studio_name TEXT
 );
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 
+INSERT INTO actors (actor_name)
+VALUES ("Christian Bale");
 
-INSERT INTO movies (
-   movie_name,
-   year_released,
-   MPAA_rating,
-   studio_name
-)
+INSERT INTO actors (actor_name)
+VALUES ("Michael Caine");
 
-VALUES (
-    "Batman Begins", "2005", "PG,13", 1
-);
+INSERT INTO actors (actor_name)
+VALUES ("Liam Neeson");
 
+INSERT INTO actors (actor_name)
+VALUES ("Katie Holmes");
+
+INSERT INTO actors (actor_name)
+VALUES ("Gary Oldman");
+
+INSERT INTO actors (actor_name)
+VALUES ("Heath Ledger");
+
+INSERT INTO actors (actor_name)
+VALUES ("Aaron Eckhart");
+
+INSERT INTO actors (actor_name)
+VALUES ("Maggie Gyllenhaal");
+
+INSERT INTO actors (actor_name)
+VALUES ("Tom Hardy");
+
+INSERT INTO actors (actor_name)
+VALUES ("Joseph Gordon-Levitt");
+
+INSERT INTO actors (actor_name)
+VALUES ("Anne Hathaway");
 
 -- Prints a header for the movies output
 .print "Movies"
