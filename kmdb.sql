@@ -103,7 +103,6 @@
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS actors;
 DROP TABLE IF EXISTS cast;
-DROP TABLE IF EXISTS studios;
 
 -- Create new tables, according to your domain model
 CREATE TABLE movies (
@@ -239,4 +238,4 @@ FROM movies;
 SELECT movies.movie_title, actors.actor_name, cast.character_name
 FROM cast
 INNER JOIN movies ON movies.id = cast.movie_id
-INNER JOIN actors ON actors.id = cast.actor_id;
+INNER JOIN actors ON actors.id = cast.actor_id
